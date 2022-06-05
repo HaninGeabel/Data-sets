@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="visibility.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <h1 >Search Choice</h1> 
+    <div id="information">
+        <form id="MainPage" onsubmit="makeVisible(); return false;">
+            <div id="choices">
+               
+                <br>
+                <br>
+                <br>
+                
+                <table ><tr><td>
+                    Traffic Incidents</td> <td><input type=button name="TrafficIncidents" value="Traffic Incidents" class="button" onclick="getTraffic()" id="TrafficIncidents"></td></tr>
+                    <tr><td>Traffic Cameras</td> <td><input type=button name="rafficCameras" value="Traffic Cameras"  class="button" onclick="getCameras()" id="rafficCameras" ></td></tr>
+                    <tr><td>Crime Stats</td> <td><input type=button name="CrimeStats" value="Crime Stats" class="button"  onclick="getCrime()" id="CrimeStats" ></td></tr>
+                    <tr><td>Building Permits</td> <td><input type=button name="BuildingPermits" value="Building Permits" class="button"  onclick="getBuilding()" id="BuildingPermits" ></td></tr>
+                </table>
+
+            </div>
+            </form>
+            </div>
+            <span id="result"></span>
+    <table id="searchresults">
+
+    </table>
+</body>
+</html>
